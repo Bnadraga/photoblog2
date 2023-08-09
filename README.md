@@ -1,1 +1,1 @@
-# photoblog2
+# PHOTOBLOG
