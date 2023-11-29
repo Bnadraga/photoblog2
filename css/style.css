@@ -27,6 +27,7 @@ body{
     cursor: pointer;
     margin: 0 auto;
     padding: 20px 48px;
+    transition: color 250ms ease-in-out, border 250ms ease-in-out;
 }
 .button:hover{
     color: var(--hover-color);
@@ -51,21 +52,26 @@ span{
     font-size: 30px;
     margin-top: 32px;
 }
-p{
+.card-text{
     font-weight: 400;
     font-size: 14px;
     margin-top: 40px;
 }
-a{
+.nav-link{
     color: var(--navicatio-color);
+    transition: color 250ms ease-in-out;
 }
-nav{
-    word-spacing: 99px;
-    color: var(--navicatio-color);
-    text-align: center;
+.navigation-list{
+    display: flex;
+    justify-content: space-around;
 }
 .nav-link:hover{
     color: var(--hover-color);
+}
+.navigation{
+    word-spacing: 99px;
+    color: var(--navicatio-color);
+    text-align: center;
 }
 .main-wrap{
     margin-top: 92px;
