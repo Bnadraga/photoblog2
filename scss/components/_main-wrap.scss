@@ -1,0 +1,32 @@
+.main-wrap{
+    margin-top: 92px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 420px;
+    margin-bottom: 126px;
+
+    &__title{
+        font-weight: 400;
+        font-size: 30px;
+        margin-top: 32px;
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 40px;
+    }
+    &__img{
+        margin-bottom: 62px;
+    }
+}
+span{
+    padding-bottom: 32px;
+    padding-top: 62px;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    color: $span-color;
+}

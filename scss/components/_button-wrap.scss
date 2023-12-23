@@ -1,0 +1,17 @@
+.wrap{
+    display: flex;
+
+    &__button{
+        border: 1px solid #959292;
+        background: $background-color;
+        cursor: pointer;
+        margin: 0 auto;
+        padding: 20px 48px;
+        transition: color 250ms ease-in-out, border 250ms ease-in-out;
+
+        &:hover{
+            color: $hover-color;
+            border: 1px solid $hover-color;
+        }
+    }
+}
