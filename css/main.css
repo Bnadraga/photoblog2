@@ -1,13 +1,22 @@
 .container {
-  width: 906px;
+  max-width: 480px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 906px) {
+  .container {
+    width: 906px;
+  }
+}
 body {
-  width: 1200px;
-  padding: 71px 147px;
+  padding: 0 15px;
   margin: 0 auto;
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -34,64 +43,57 @@ a {
   text-decoration: none;
 }
 
-.navigation {
-  word-spacing: 99px;
-  color: #7D7D7D;
-  text-align: center;
-}
-.navigation__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+img {
+  width: 100%;
 }
 
 .nav__link {
   color: #7D7D7D;
   -webkit-transition: color 250ms ease-in-out;
   transition: color 250ms ease-in-out;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .nav__link:hover {
   color: #03A9F4;
 }
 
-.main-wrap {
-  margin-top: 92px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.header {
+  padding: 20px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .header {
+    padding: 30px 0;
+  }
+}
+@media screen and (min-width: 906px) {
+  .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .header {
+    padding-top: 71px;
+    padding-bottom: 90px;
+  }
+}
 .card {
-  width: 420px;
-  margin-bottom: 126px;
-}
-.card__title {
-  font-weight: 400;
-  font-size: 30px;
-  margin-top: 32px;
-}
-.card__text {
-  font-weight: 400;
-  font-size: 14px;
-  margin-top: 40px;
-}
-.card__img {
-  margin-bottom: 62px;
-}
-
-span {
-  padding-bottom: 32px;
-  padding-top: 62px;
-  font-weight: 300;
-  font-family: "Ubuntu", sans-serif;
-  color: #B4AD9E;
+  max-width: 420px;
 }
 
 .wrap {
